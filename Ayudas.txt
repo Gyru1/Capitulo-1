@@ -1,0 +1,65 @@
+Comandos de ayuda:
+? help ? ayuda en modo texto. Ejemplos: help ? help fft ?
+? lookfor palabra ? busca palabra en la ayuda de texto. Ejemplo: lookfor fft ?
+? <F1> o helpwin ? ayuda en ventanas (estilo Windows).
+Si se desea cancelar un comando en ejecución, presionar <Ctrl> c
+a = 1 asignación básica
+b = 2 ídem
+c = a + b suma
+c consulta valor
+C ídem; MATLAB distingue minúsculas de mayúsculas
+clear borra variables de la memoria
+c consulta valor
+clc borra ventana de comandos
+? despliega comandos anteriores
+a = [1 2 3 4] crea vector de fila
+a = [1 2 3 4]; crea vector de fila sin mostrar contenido
+b = a’ b ? transpuesta(a) (la tecla del apóstrofe es la del signo ?)
+a = [1 2 3 4]’ crea vector de columna
+a = [1;2;3;4] crea vector de columna
+
+a = [1 2 3; 3 4 5] crea matriz de 2 x 3
+b = [-1 -2 -3; -3 -4 -5] ídem
+c = [a b] combina (concatena) matrices a y b
+x = 0 : 5 crea vector de fila desde 0 a 5, incremento 1
+x = 0 : 2 : 10 crea vector de fila desde 0 a 10, incremento 2
+x = 0 : pi/4 : 2*pi crea vector de fila desde 0 a 2?, incremento ?/4
+format long desplegar 15 dígitos
+x despliega x
+format short desplegar 5 dígitos (normal)
+x despliega x
+who lista variables activas en memoria
+whos detalla variables activas en memoria
+a = [1 2 3] crea vector de fila
+b = [1 2 3]’ crea vector de columna
+c = a * b multiplicación de matrices; el producto es un escalar
+c = b * a multiplicación de matrices; el producto es una matriz
+a = [1 2 3; 3 4 5] crea matriz de 2 x 3
+b = [-1 –2; -3 –3; -4 -5] crea matriz de 3 x 2
+c = a * b multiplica matrices a y b
+
+b = [-1 –2 –3; –3 -4 -5] cambia b a matriz de 2 x 3
+c = a .* b multiplica elementos correspondientes de a y b
+c = a ./ b divide elementos correspondientes de a y b
+c = a .^ b eleva elementos de a a las potencias en b ( ^ : <Alt> 94)
+c = 3 * a multiplica elementos de a por 3
+c = 3 .* a multiplica elementos de a por 3
+b = [-1 –2 –3] cambia b a vector
+b(2) despliega segundo elemento de b
+b(2) = 5 modifica segundo elemento de b
+c(:, 2) selecciona 2ª columna de matriz c
+c(2, 2:3) selecciona 2ª fila de matriz c , columnas 2 a 3
+size(c) despliega las dimensiones de la matriz c
+zeros(3, 2) crea matriz 3 x 2 de ceros
+ones(2, 3) crea matriz 2 x 3 de unos
+2 + 3 j número complejo (también puede ser 2 + 3 i)
+real(2 + 3 j) parte real
+imag(2 + 3 j) parte imaginaria
+abs(3 + 4 j) magnitud, (Re2 + Im2)1/2
+angle(2 + 3 j) ángulo en el rango ± p [rad]rad] (±180°) vía atan2(Im, Re)
+Nota: ArcTan(Im/Re) está limitado a ± 89.99…°
+Ej: atan2(-1, -1) = -135° ArcTan(-1/-1) = 45°
+2 == 3 verifica igualdad: retorna 0 (falso)
+3 == 3 verifica igualdad: retorna 1 (verdadero)
+2 ~= 3 verifica desigualdad: retorna 1 ( ~ : <Alt> 126)
+3 ~= 3 verifica desigualdad: retorna 0
